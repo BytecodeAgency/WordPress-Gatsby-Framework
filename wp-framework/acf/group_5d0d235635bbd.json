@@ -1,0 +1,174 @@
+{
+    "key": "group_5d0d235635bbd",
+    "title": "Theme Options - Colors",
+    "fields": [
+        {
+            "key": "field_5d0d236113f08",
+            "label": "Primary Color",
+            "name": "primary_color",
+            "type": "color_picker",
+            "instructions": "Main color in the website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5d153251d122f",
+            "label": "Secondary Color",
+            "name": "secondary_color",
+            "type": "color_picker",
+            "instructions": "Secondary color in the website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5d153264d1230",
+            "label": "Tertiary Color",
+            "name": "tertiary_color",
+            "type": "color_picker",
+            "instructions": "Tertiary color in the website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5d153275d1231",
+            "label": "Page Background",
+            "name": "page_background",
+            "type": "color_picker",
+            "instructions": "Background color in the website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5d15327ed1232",
+            "label": "Menu Background",
+            "name": "menu_background",
+            "type": "color_picker",
+            "instructions": "Menu color in the website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5d15328bd1233",
+            "label": "Menu Text",
+            "name": "menu_text",
+            "type": "color_picker",
+            "instructions": "Menu text color in the website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5d1532a3d1234",
+            "label": "Heading Text",
+            "name": "heading_text",
+            "type": "color_picker",
+            "instructions": "Heading text color in the website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5d1532b2d1235",
+            "label": "Body Text",
+            "name": "body_text",
+            "type": "color_picker",
+            "instructions": "Body text color in the website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5d1532bdd1236",
+            "label": "Button Background",
+            "name": "button_background",
+            "type": "color_picker",
+            "instructions": "Button background text color in the website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5d1532cbd1237",
+            "label": "Button Text",
+            "name": "button_text",
+            "type": "color_picker",
+            "instructions": "Button text background text color in the website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-theme-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1561670370
+}

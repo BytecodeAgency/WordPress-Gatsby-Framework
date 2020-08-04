@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "lib": ["es2018"],
+        "jsx": "react",
+        "outDir": "./lib",
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "declaration": true,
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "baseUrl": ".",
+        "paths": {
+            "@wp-compiler/*": ["src/*"]
+        }
+    },
+    "exclude": ["dist", "node_modules"],
+    "include": ["src", "gatsby-config.js", "gatsby-node.js"]
+}

@@ -1,0 +1,72 @@
+image: node:10-alpine
+stages:
+    - test
+    - build
+    - deploy
+    - analysis
+cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+        - node_modules/
+
+build-project:
+    stage: build
+    before_script:
+        - npm i -g yarn
+        - yarn
+    script:
+        - yarn run compile
+
+storybook:
+    stage: build
+    before_script:
+        - npm i -g yarn
+        - yarn
+    script:
+        - yarn run build:storybook
+    artifacts:
+        paths:
+            - storybook-static/
+    cache: {}
+
+test_coverage:
+    stage: test
+    before_script:
+        - npm i -g yarn
+        - yarn
+    script:
+        - yarn run test
+        - mv coverage/lcov-report cov
+    artifacts:
+        paths:
+            - cov/
+
+lint:
+    stage: test
+    before_script:
+        - npm i -g yarn
+        - yarn
+    script:
+        - yarn run lint
+
+pages:
+    image: alpine:3.9
+    stage: deploy
+    dependencies:
+        - test_coverage
+        - storybook
+    script:
+        - rm -rf public
+        - mv storybook-static public
+        - mv cov public/coverage
+    artifacts:
+        paths:
+            - public
+    only:
+        - master
+
+include:
+    - template: Code-Quality.gitlab-ci.yml
+code_quality:
+    stage: analysis
+    dependencies: []
